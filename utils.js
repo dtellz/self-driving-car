@@ -46,3 +46,9 @@ function getRGBA(value) {
     const B = value > 0 ? 0 : 255;
     return "rgba(" + R + "," + G + "," + B + "," + alpha + ")";
 }
+
+function getRandomColor() {
+    // get a random color avoiding blue to differenciate from AI car
+    const hue = 290 + Math.random() * 260;
+    return "hsl(" + hue + ", 100%, 60%)";
+}
